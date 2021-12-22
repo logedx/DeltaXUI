@@ -1,0 +1,14 @@
+<view
+	class="dx-popup"
+	bindtap="onOverlayTap"
+	catchtouchmove="onCatchTouchMove"
+>
+	<view
+		class="box class"
+		style="{{ style }}"
+		catchtap="onCatchTap"
+	>
+		<slot></slot>
+	</view>
+
+</view>

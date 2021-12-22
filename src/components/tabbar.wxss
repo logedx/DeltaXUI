@@ -1,0 +1,135 @@
+.dx-tabbar {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: white;
+	padding-bottom: var(--radius);
+}
+
+.dx-tabbar .overflow {
+	width: 100%;
+	height: 88rpx;
+	padding: 0 var(--sm);
+	display: flex;
+}
+
+.dx-tabbar .overflow .item {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	white-space: nowrap;
+	font-size: var(--md);
+	padding: 0 var(--sm);
+	padding-bottom: 18rpx;
+	color: var(--sub);
+	flex: 1;
+	position: relative;
+}
+
+.dx-tabbar .overflow .item::after {
+	content: "";
+	position: absolute;
+	width: calc(100% - (2* var(--sm)));
+	border-radius: var(--radius);
+	height: var(--radius);
+	bottom: 0;
+}
+
+.dx-tabbar .overflow .item.odd {
+	color: var(--content);
+}
+
+
+.dx-tabbar .overflow .item.odd::after {
+	background: var(--content);
+}
+
+.dx-tabbar.primary {
+	background: var(--primary);
+}
+
+.dx-tabbar.primary .item {
+	color: white;
+	border-color: var(--primary);
+}
+
+.dx-tabbar.primary .item.odd {
+	border-color: white;
+}
+
+.dx-tabbar.light-primary {
+	background: var(--light-primary);
+}
+
+.dx-tabbar.light-primary .item {
+	color: white;
+	border-color: var(--light-primary);
+}
+
+.dx-tabbar.light-primary .item.odd {
+	border-color: white;
+}
+
+.dx-tabbar.dark-primary {
+	background: var(--dark-primary);
+}
+
+.dx-tabbar.dark-primary .item {
+	color: white;
+	border-color: var(--dark-primary);
+}
+
+.dx-tabbar.dark-primary .item.odd {
+	border-color: white;
+}
+
+.dx-tabbar.info {
+	background: var(--info);
+}
+
+.dx-tabbar.info .item {
+	color: white;
+	border-color: var(--info);
+}
+
+.dx-tabbar.info .item.odd {
+	border-color: white;
+}
+
+.dx-tabbar.success {
+	background: var(--success);
+}
+
+.dx-tabbar.success .item {
+	color: white;
+	border-color: var(--success);
+}
+
+.dx-tabbar.success .item.odd {
+	border-color: white;
+}
+
+.dx-tabbar.warning {
+	background: var(--warning);
+}
+
+.dx-tabbar.warning .item {
+	color: white;
+	border-color: var(--warning);
+}
+
+.dx-tabbar.warning .item.odd {
+	border-color: white;
+}
+
+.dx-tabbar.error {
+	background: var(--error);
+}
+
+.dx-tabbar.error .item {
+	color: white;
+	border-color: var(--error);
+}
+
+.dx-tabbar.error .item.odd {
+	border-color: white;
+}

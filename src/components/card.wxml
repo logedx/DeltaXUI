@@ -1,0 +1,16 @@
+<view class="dx-card">
+	<view class="thumb">
+		<image
+			class="image"
+			src="{{ thumb }}"
+			wx:if="{{ thumb }}"
+		></image>
+	</view>
+
+	<view class="content">
+		<text class="title">{{ title }}</text>
+		<slot name="desc"></slot>
+	</view>
+
+	<slot name="notice"></slot>
+</view>

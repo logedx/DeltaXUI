@@ -1,0 +1,7 @@
+{
+	"component": true,
+	"usingComponents": {
+		"dx-avatar": "/dxui/components/avatar",
+		"dx-icon": "/dxui/components/icon"
+	}
+}

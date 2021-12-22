@@ -1,0 +1,56 @@
+.dx-slideview {
+	width: 100%;
+	position: relative;
+	display: block;
+	z-index: 0;
+}
+
+.dx-slideview .view {
+	z-index: 2;
+	position: relative;
+	background: white;
+	transition: transform cubic-bezier(0.18, 0.89, 0.32, 1);
+	box-shadow: 4px 0 4px -4px rgba(0, 0, 0, 0.4);
+}
+
+.dx-slideview .handle {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background: white;
+	box-sizing: border-box;
+	justify-content: flex-end;
+	position: absolute;
+	z-index: 0;
+	right: 0;
+	top: 0;
+}
+
+.dx-slideview .handle .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	flex: 1;
+}
+
+.dx-slideview .handle .item.info {
+	background: var(--info);
+	color: white;
+}
+
+.dx-slideview .handle .item.success {
+	background: var(--success);
+	color: white;
+}
+
+.dx-slideview .handle .item.warning {
+	background: var(--warning);
+	color: white;
+}
+
+.dx-slideview .handle .item.error {
+	background: var(--error);
+	color: white;
+}

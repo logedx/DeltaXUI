@@ -1,0 +1,70 @@
+.dx-form-item {
+	position: relative;
+	background: white;
+	display: flex;
+	padding: var(--sm);
+	box-sizing: border-box;
+	margin-bottom: 1px;
+}
+
+.dx-form-item.block {
+	width: 100%;
+	display: block;
+}
+
+.dx-form-item.flex {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dx-form-item .label {
+	padding-right: var(--xs);
+	font-size: var(--md);
+	height: var(--xl);
+	line-height: var(--xl);
+	flex-shrink: 0;
+}
+
+.dx-form-item.block .label {
+	display: block;
+	margin-bottom: var(--xs);
+}
+
+.dx-form-item .tip {
+	position: absolute;
+	color: var(--sub);
+	line-height: var(--xl);
+	font-size: var(--sm);
+}
+
+.dx-form-item.flex.notice {
+	padding-bottom: var(--xl);
+}
+
+.dx-form-item.flex.notice .tip {
+	left: var(--sm);
+	top: var(--xxl);
+}
+
+.dx-form-item.block.notice .tip {
+	text-align: right;
+	right: var(--sm);
+	top: var(--sm);
+}
+
+.dx-form-item input {
+	text-align: right;
+}
+
+.dx-form-item textarea {
+	border-radius: 4px;
+	border: solid 1px #ddd;
+	box-sizing: border-box;
+	height: 278rpx;
+	line-height: 44rpx;
+	margin-top: 12rpx;
+	padding: 6rpx 12rpx;
+	width: 100%;
+}

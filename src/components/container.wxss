@@ -1,0 +1,5 @@
+.dx-container {
+	padding-top: var(--sm);
+	box-sizing: border-box;
+	min-height: 100vh;
+}

@@ -1,0 +1,13 @@
+<view class="dx-form-item {{ block ? 'block' : 'flex' }} {{ tip ? 'notice': '' }}">
+	<text
+		class="label"
+		wx:if="{{ label }}"
+	>{{ label }}</text>
+
+	<text
+		class="tip"
+		wx:if="{{ tip }}"
+	>{{ tip }}</text>
+
+	<slot></slot>
+</view>

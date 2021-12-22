@@ -1,0 +1,49 @@
+.dx-popup {
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: var(--popup);
+	box-sizing: border-box;
+	animation: .15s fadeIn;
+	z-index: 1025;
+	height: 100vh;
+	width: 100%;
+}
+
+
+.dx-popup .box {
+	width: 100%;
+	max-height: 100vh;
+	background: white;
+	box-sizing: border-box;
+	box-shadow: var(--shadow);
+	animation: .15s fadeInUp;
+	padding: var(--sm);
+	overflow-y: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		bottom: -10%;
+	}
+
+	to {
+		bottom: 0;
+		opacity: 1;
+	}
+}

@@ -1,0 +1,135 @@
+.dx-checkvalve {
+	padding: var(--sm) 0;
+	background: white;
+}
+
+.dx-checkvalve .items {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	border-radius: var(--radius);
+	border: solid 1px var(--sub);
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+}
+
+.dx-checkvalve .items .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	border-right: solid 1px var(--sub);
+	color: var(--sub);
+	font-size: 28rpx;
+	line-height: 1;
+	height: 48rpx;
+	flex: 1;
+}
+
+.dx-checkvalve .items .item:last-child {
+	border-right: none;
+}
+
+.dx-checkvalve .items .item.odd {
+	background: var(--sub);
+	color: white;
+}
+
+.dx-checkvalve.primary .items {
+	border-color: var(--primary);
+}
+
+.dx-checkvalve.primary .items .item {
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+.dx-checkvalve.primary .items .item.odd {
+	color: white;
+	background: var(--primary);
+}
+
+.dx-checkvalve.light-primary .items {
+	border-color: var(--light-primary);
+}
+
+.dx-checkvalve.light-primary .items .item {
+	color: var(--light-primary);
+	border-color: var(--light-primary);
+}
+
+.dx-checkvalve.light-primary .items .item.odd {
+	color: white;
+	background: var(--light-primary);
+}
+
+.dx-checkvalve.dark-primary .items {
+	border-color: var(--dark-primary);
+}
+
+.dx-checkvalve.dark-primary .items .item {
+	color: var(--dark-primary);
+	border-color: var(--dark-primary);
+}
+
+.dx-checkvalve.dark-primary .items .item.odd {
+	color: white;
+	background: var(--dark-primary);
+}
+
+.dx-checkvalve.info .items {
+	border-color: var(--info);
+}
+
+.dx-checkvalve.info .items .item {
+	color: var(--info);
+	border-color: var(--info);
+}
+
+.dx-checkvalve.info .items .item.odd {
+	color: white;
+	background: var(--info);
+}
+
+.dx-checkvalve.success .items {
+	border-color: var(--success);
+}
+
+.dx-checkvalve.success .items .item {
+	color: var(--success);
+	border-color: var(--success);
+}
+
+.dx-checkvalve.success .items .item.odd {
+	color: white;
+	background: var(--success);
+}
+
+.dx-checkvalve.warning .items {
+	border-color: var(--warning);
+}
+
+.dx-checkvalve.warning .items .item {
+	color: var(--warning);
+	border-color: var(--warning);
+}
+
+.dx-checkvalve.warning .items .item.odd {
+	color: white;
+	background: var(--warning);
+}
+
+.dx-checkvalve.error .items {
+	border-color: var(--error);
+}
+
+.dx-checkvalve.error .items .item {
+	color: var(--error);
+	border-color: var(--error);
+}
+
+.dx-checkvalve.error .items .item.odd {
+	color: white;
+	background: var(--error);
+}

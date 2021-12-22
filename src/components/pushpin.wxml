@@ -1,0 +1,6 @@
+<view class="dx-pushpin {{ color }}">
+	<dx-icon
+		size="72"
+		value="{{ value }}"
+	></dx-icon>
+</view>

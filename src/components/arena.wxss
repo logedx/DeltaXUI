@@ -1,0 +1,38 @@
+.dx-arena {
+	position: relative;
+	margin-bottom: var(--xxl);
+}
+
+.dx-arena.shadow {
+	box-shadow: 0 14px 14px -14px rgb(0, 0, 0, 0.4);
+}
+
+.dx-arena .curtain {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: var(--red);
+	padding-top: var(--xxxxl);
+	padding-bottom: var(--xl);
+	box-sizing: border-box;
+	position: relative;
+}
+
+.dx-arena .curtain .label {
+	font-size: var(--lg);
+	margin-top: var(--md);
+	color: white;
+}
+
+.dx-arena .curtain .affix {
+	margin-top: var(--xs);
+	color: white;
+}
+
+.dx-arena .symbol {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--background);
+	padding: var(--sm);
+}

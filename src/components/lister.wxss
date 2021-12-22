@@ -1,0 +1,46 @@
+.dx-lister {
+	box-sizing: border-box;
+}
+
+.dx-lister .label {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: var(--sm);
+	background: white;
+}
+
+.dx-lister .label .text {
+	display: flex;
+	align-items: center;
+	color: var(--sub);
+	font-size: var(--sm);
+	padding-left: var(--xs);
+	position: relative;
+	line-height: 1;
+	height: var(--sm);
+}
+
+.dx-lister .label .text::before {
+	content: "";
+	height: calc(100% - 1rpx);
+	width: var(--radius);
+	border-radius: var(--xl);
+	background: var(--red);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.dx-lister .filter {
+	display: block;
+	border-bottom: solid 1px var(--background);
+}
+
+.dx-lister .tail {
+	display: block;
+	padding: var(--xxxxxxl) 0;
+	text-align: center;
+	font-size: var(--sm);
+	color: var(--disabled);
+}

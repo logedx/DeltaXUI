@@ -1,0 +1,34 @@
+.dx-sticker {
+	border: dashed 1px #ddd;
+	border-radius: var(--radius);
+	overflow: hidden
+}
+
+.dx-sticker .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	background-image: linear-gradient(to top right, #efefef 25%, transparent 25%, transparent 75%, #efefef 75%, #efefef), linear-gradient(to top right, #efefef 25%, transparent 25%, transparent 75%, #efefef 75%, #efefef);
+	background-position: 0 0, 10px 10px;
+	background-size: 21px 21px;
+	position: relative;
+	font-size: 100rpx;
+	color: #ccc;
+	width: 100%;
+}
+
+.dx-sticker .item .image {
+	width: 100%;
+	display: block;
+}
+
+.dx-sticker .item .delete {
+	position: absolute;
+	right: 4rpx;
+	top: 8rpx;
+}
+
+.dx-sticker .item.upload {
+	height: 268rpx;
+}

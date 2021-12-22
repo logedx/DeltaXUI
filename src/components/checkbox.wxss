@@ -1,0 +1,92 @@
+.dx-checkbox {
+	align-items: center;
+	display: inline-flex;
+	vertical-align: middle;
+	flex-wrap: wrap;
+}
+
+.dx-checkbox .item {
+	vertical-align: middle;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	color: var(--content);
+	background: white;
+	border: solid 1rpx var(--border);
+	border-radius: var(--radius);
+	margin-right: var(--xs);
+	font-size: var(--sm);
+}
+
+.dx-checkbox .item:last-child {
+	margin-right: 0;
+}
+
+.dx-checkbox.xs .item {
+	padding: 0 8rpx;
+	height: var(--lg);
+}
+
+.dx-checkbox.sm .item {
+	padding: 0 16rpx;
+	height: var(--xl);
+}
+
+.dx-checkbox.md .item {
+	padding: 0 32rpx;
+	height: var(--xl);
+}
+
+.dx-checkbox.lg .item {
+	padding: 0 48rpx;
+	height: var(--xxl);
+}
+
+
+.dx-checkbox.primary .odd {
+	background: var(--primary);
+	border-color: var(--primary);
+	color: white;
+}
+
+.dx-checkbox.light-primary .odd {
+	background: var(--light-primary);
+	border-color: var(--light-primary);
+	color: white;
+}
+
+.dx-checkbox.dark-primary .odd {
+	background: var(--dark-primary);
+	border-color: var(--dark-primary);
+	color: white;
+}
+
+.dx-checkbox.info .odd {
+	background: var(--info);
+	border-color: var(--info);
+	color: white;
+}
+
+.dx-checkbox.success .odd {
+	background: var(--success);
+	border-color: var(--success);
+	color: white;
+}
+
+.dx-checkbox.warning .odd {
+	background: var(--warning);
+	border-color: var(--warning);
+	color: white;
+}
+
+.dx-checkbox.error .odd {
+	background: var(--error);
+	border-color: var(--error);
+	color: white;
+}
+
+.dx-checkbox.disabled .odd {
+	background: var(--background);
+	color: var(--disabled);
+}

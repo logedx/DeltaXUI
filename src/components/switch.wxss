@@ -1,0 +1,109 @@
+.dx-switch {
+	width: var(--xxxl);
+	height: var(--lg);
+	border-radius: var(--lg);
+	position: relative;
+	display: inline-block;
+	box-sizing: content-box;
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s;
+	font-size: 0;
+}
+
+.dx-switch::before {
+	content: "";
+	top: 0;
+	right: calc(100% - var(--lg));
+	position: absolute;
+	width: var(--lg);
+	height: var(--lg);
+	box-shadow: 0 3px 1px 0 rgb(0 0 0 / 5%), 0 2px 2px 0 rgb(0 0 0 / 10%), 0 3px 3px 0 rgb(0 0 0 / 5%);
+	transition: right 0.3s cubic-bezier(0.3, 1.05, 0.4, 1.05);
+	background-color: white;
+	border-radius: 100%;
+}
+
+.dx-switch.checked::before {
+	right: 0 !important;
+}
+
+.dx-switch.checked.primary {
+	background-color: var(--primary);
+}
+
+.dx-switch.checked.light-primary {
+	background-color: var(--light-primary);
+}
+
+.dx-switch.checked.dark-primary {
+	background-color: var(--dark-primary);
+}
+
+.dx-switch.checked.info {
+	background-color: var(--info);
+}
+
+.dx-switch.checked.success {
+	background-color: var(--success);
+}
+
+.dx-switch.checked.warning {
+	background-color: var(--warning);
+}
+
+.dx-switch.checked.error {
+	background-color: var(--error);
+}
+
+.dx-switch.checked.disabled {
+	background-color: var(--background-color);
+}
+
+.dx-switch.xs {
+	width: var(--xxl);
+	height: var(--md);
+	border-radius: var(--md);
+}
+
+.dx-switch.xs::before {
+	width: var(--md);
+	height: var(--md);
+	right: calc(100% - var(--md));
+}
+
+.dx-switch.sm {
+	width: var(--xxxl);
+	height: var(--lg);
+	border-radius: var(--lg);
+}
+
+.dx-switch.sm::before {
+	width: var(--lg);
+	height: var(--lg);
+	right: calc(100% - var(--lg));
+}
+
+.dx-switch.md {
+	width: var(--xxxxl);
+	height: var(--xl);
+	border-radius: var(--xl);
+}
+
+.dx-switch.md::before {
+	width: var(--xl);
+	height: var(--xl);
+	right: calc(100% - var(--xl));
+}
+
+.dx-switch.lg {
+	width: var(--xxxxxl);
+	height: var(--xxl);
+	border-radius: var(--xxl);
+}
+
+.dx-switch.lg::before {
+	width: var(--xxl);
+	height: var(--xxl);
+	right: calc(100% - var(--xxl));
+}

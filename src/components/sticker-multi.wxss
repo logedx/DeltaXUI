@@ -1,0 +1,67 @@
+.dx-sticker-multi {
+	border: dashed 1px #ddd;
+}
+
+.dx-sticker-multi .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	background-image: linear-gradient(to top right, #efefef 25%, transparent 25%, transparent 75%, #efefef 75%, #efefef), linear-gradient(to top right, #efefef 25%, transparent 25%, transparent 75%, #efefef 75%, #efefef);
+	background-position: 0 0, 10px 10px;
+	background-size: 21px 21px;
+	position: relative;
+	font-size: 100rpx;
+	color: #ccc;
+	width: 100%;
+}
+
+.dx-sticker-multi .item .image {
+	width: 100%;
+	display: block;
+}
+
+.dx-sticker-multi .item .handle {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 8rpx 4rpx;
+	justify-content: space-between;
+	border-top: dashed 1px var(--green);
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.dx-sticker-multi .item .handle::before {
+	content: '';
+	width: 4px;
+	height: 4px;
+	color: var(--green);
+	box-sizing: border-box;
+	border-top: solid 1px var(--green);
+	border-right: solid 1px var(--green);
+	transform: rotate(45deg);
+	position: absolute;
+	left: -8px;
+	top: -3px;
+}
+
+.dx-sticker-multi .item .handle::after {
+	content: '';
+	width: 4px;
+	height: 4px;
+	color: var(--green);
+	box-sizing: border-box;
+	border-top: solid 1px var(--green);
+	border-left: solid 1px var(--green);
+	transform: rotate(-45deg);
+	position: absolute;
+	right: -8px;
+	top: -3px;
+}
+
+.dx-sticker-multi .item.upload {
+	height: 268rpx;
+}

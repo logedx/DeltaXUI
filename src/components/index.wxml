@@ -1,0 +1,30 @@
+<view
+	class="dx-index {{ color }}"
+	catchtouchmove="onCatchTouchMove"
+>
+	<view
+		class="letter"
+		bindtouchend="onLetterTouchEnd"
+		bindtouchstart="onLetterTouchStart"
+		catchtouchmove="onLetterTouchMove"
+	>
+		<text
+			class="item {{ letter === index ? 'odd':'' }}"
+			wx:key="*this"
+			wx:for="{{ letter_ }}"
+		>{{ item }}</text>
+	</view>
+
+	<view
+		class="more"
+		bindtap="onMoreTap"
+		wx:if="{{ more }}"
+	>
+		<dx-icon value="more"></dx-icon>
+	</view>
+
+	<text
+		class="index"
+		wx:if="{{ index_ }}"
+	>{{ letter_[letter] }}</text>
+</view>

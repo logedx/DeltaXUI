@@ -1,0 +1,131 @@
+.dx-radio {
+	align-items: center;
+	background: white;
+	box-sizing: border-box;
+	display: inline-flex;
+	flex-wrap: wrap;
+	vertical-align: middle;
+}
+
+.dx-radio .label {
+	height: 100%;
+	white-space: nowrap;
+	border: solid 1rpx var(--border);
+	display: inline-flex;
+	align-items: center;
+	box-sizing: border-box;
+	position: relative;
+	margin-top: 2rpx;
+	margin-bottom: 2rpx;
+	margin-left: -1px;
+}
+
+.dx-radio .label:first-child {
+	border-top-left-radius: var(--radius);
+	border-bottom-left-radius: var(--radius);
+	margin-left: 0;
+}
+
+.dx-radio .label:last-child {
+	border-top-right-radius: var(--radius);
+	border-bottom-right-radius: var(--radius);
+}
+
+.dx-radio .label.checked {
+	z-index: 3;
+	border-color: var(--sub);
+	background: var(--sub);
+	color: white;
+}
+
+.dx-radio .label.disabled {
+	z-index: 1;
+	border-color: var(--border);
+	background: #f7f7f7;
+	color: #ccc;
+}
+
+.dx-radio .label.checked.disabled {
+	z-index: 1;
+	border-color: var(--border) !important;
+	background: #e6e6e6 !important;
+	color: white !important;
+}
+
+.dx-radio.primary .checked {
+	border-color: var(--primary);
+	background: var(--primary);
+	color: white;
+}
+
+.dx-radio.light-primary .checked {
+	border-color: var(--light-primary);
+	background: var(--light-primary);
+	color: white;
+}
+
+.dx-radio.dark-primary .checked {
+	border-color: var(--dark-primary);
+	background: var(--dark-primary);
+	color: white;
+}
+
+.dx-radio.info .checked {
+	border-color: var(--info);
+	background: var(--info);
+	color: white;
+}
+
+.dx-radio.success .checked {
+	border-color: var(--success);
+	background: var(--success);
+	color: white;
+}
+
+.dx-radio.warning .checked {
+	border-color: var(--warning);
+	background: var(--warning);
+	color: white;
+}
+
+.dx-radio.error .checked {
+	border-color: var(--error);
+	background: var(--error);
+	color: white;
+}
+
+.dx-radio.xs {
+	height: var(--lg);
+	font-size: var(--sm);
+}
+
+.dx-radio.xs .label {
+	padding: 0 8rpx;
+}
+
+.dx-radio.sm {
+	height: var(--xl);
+	font-size: var(--sm);
+}
+
+.dx-radio.sm .label {
+	padding: 0 16rpx;
+}
+
+.dx-radio.md {
+	height: var(--xxl);
+	font-size: var(--lg);
+}
+
+.dx-radio.md .label {
+	padding: 0 24rpx;
+}
+
+.dx-radio.lg {
+	height: var(--xxxl);
+	font-size: var(--lg);
+}
+
+.dx-radio.lg .label {
+	padding: 0 32rpx;
+}

@@ -1,0 +1,34 @@
+<view class="dx-search">
+	<view class="search">
+		<view class="form">
+			<dx-icon
+				size="36"
+				value="search"
+			></dx-icon>
+
+			<input
+				type="text"
+				class="keyword"
+				confirm-type="search"
+				placeholder="{{ placeholder }}"
+				bindblur="onInput"
+				bindconfirm="onInput"
+			></input>
+		</view>
+
+		<view
+			class="handle"
+			data-index="{{ index }}"
+			bindtap="onHandle"
+			wx:key="*this"
+			wx:for="{{ handle }}"
+		>
+			<dx-icon
+				size="42"
+				value="{{ item }}"
+			></dx-icon>
+		</view>
+
+	</view>
+
+</view>

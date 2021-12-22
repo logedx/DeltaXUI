@@ -1,0 +1,47 @@
+.dx-filter {
+	padding: var(--sm);
+	background: white;
+}
+
+.dx-filter .item {
+	display: flex;
+}
+
+.dx-filter .item .label {
+	white-space: nowrap;
+	line-height: var(--xl);
+	font-size: var(--sm);
+	color: var(--sub);
+}
+
+.dx-filter .item .value {
+	align-items: center;
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.dx-filter .item .value .tag {
+	height: var(--xl);
+	padding: 0 var(--sm);
+	color: var(--content);
+	background: var(--background);
+	border-radius: var(--radius);
+	position: relative;
+	align-items: center;
+	display: inline-flex;
+	font-size: var(--sm);
+	line-height: 1;
+	overflow: hidden;
+	margin: 0 4rpx 8rpx 4rpx;
+	white-space: nowrap;
+}
+
+.dx-filter .item .value .tag::after {
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	content: '';
+	background: var(--background);
+	border-left: var(--xs) solid transparent;
+	border-bottom: var(--xs) solid var(--green);
+}

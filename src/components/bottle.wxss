@@ -1,0 +1,45 @@
+.dx-bottle {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.dx-bottle .cap {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: var(--xs);
+	position: relative;
+	z-index: 0;
+}
+
+.dx-bottle .cap .value {
+	font-size: var(--sm);
+	color: var(--sub);
+	margin-top: var(--xs);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.dx-bottle .handle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: var(--popup);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+
+.dx-bottle .handle .item {
+	margin: 8rpx 0;
+}

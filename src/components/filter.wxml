@@ -1,0 +1,20 @@
+<view class="dx-filter">
+	<view
+		class="item"
+		wx:key="label"
+		wx:for="{{ value_ }}"
+	>
+		<text class="label">{{ item.label }}：</text>
+		<view class="value">
+			<text
+				class="tag"
+				data-index="{{ [index, index_] }}"
+				bindtap="onTagTap"
+				wx:key="value"
+				wx:for-item="item_"
+				wx:for-index="index_"
+				wx:for="{{ item.value }}"
+			>{{ item_.label }}</text>
+		</view>
+	</view>
+</view>

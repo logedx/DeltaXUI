@@ -1,0 +1,89 @@
+.dx-button {
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	line-height: 1;
+	margin-left: initial;
+	margin-right: initial;
+	text-decoration: none;
+	transform: translate(0, 0);
+	background: white;
+	color: var(--content);
+	border: solid 1rpx var(--border);
+	border-radius: var(--radius);
+	font-weight: normal;
+}
+
+.dx-button.primary {
+	background: var(--primary);
+	border-color: var(--primary);
+	color: white;
+}
+
+.dx-button.light-primary {
+	background: var(--light-primary);
+	border-color: var(--light-primary);
+	color: white;
+}
+
+.dx-button.dark-primary {
+	background: var(--dark-primary);
+	border-color: var(--dark-primary);
+	color: white;
+}
+
+.dx-button.info {
+	background: var(--info);
+	border-color: var(--info);
+	color: white;
+}
+
+.dx-button.success {
+	background: var(--success);
+	border-color: var(--success);
+	color: white;
+}
+
+.dx-button.warning {
+	background: var(--warning);
+	border-color: var(--warning);
+	color: white;
+}
+
+.dx-button.error {
+	background: var(--error);
+	border-color: var(--error);
+	color: white;
+}
+
+.dx-button.disabled {
+	background: var(--background);
+	color: var(--disabled);
+}
+
+.dx-button.xs {
+	width: auto;
+	padding: 0 8rpx;
+	height: var(--lg);
+	font-size: var(--sm);
+}
+
+.dx-button.sm {
+	width: auto;
+	padding: 0 16rpx;
+	height: var(--xl);
+	font-size: var(--md);
+}
+
+.dx-button.md {
+	width: auto;
+	padding: 0 24rpx;
+	height: var(--xxl);
+	font-size: var(--lg);
+}
+
+.dx-button.lg {
+	height: var(--xxxl);
+	font-size: var(--lg);
+	width: 100%;
+}

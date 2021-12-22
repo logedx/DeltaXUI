@@ -1,0 +1,24 @@
+{
+	"name": "DeltaXUI",
+	"version": "0.0.0",
+	"description": "",
+	"main": "app.js",
+	"license": "ISC",
+	"author": "leiddx@hotmail.com",
+	"scripts": {
+		"release": "npx standard-version"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"miniprogram-api-typings": "^3.4.4",
+		"standard-version": "^9.3.2"
+	},
+	"homepage": "https://github.com/logedx/DeltaXUI#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/logedx/DeltaXUI.git"
+	},
+	"bugs": {
+		"url": "https://github.com/logedx/DeltaXUI/issues"
+	}
+}

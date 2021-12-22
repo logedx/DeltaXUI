@@ -1,0 +1,3 @@
+.dx-form-group {
+	margin-bottom: var(--sm);
+}

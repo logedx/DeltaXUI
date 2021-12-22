@@ -1,0 +1,28 @@
+.dx-avatar-group {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	display: inline-block;
+}
+
+.dx-avatar-group .item {
+	margin-right: -10%;
+	vertical-align: middle;
+	position: relative;
+}
+
+.dx-avatar-group .item:first-child {
+	margin-right: 0;
+}
+
+.dx-avatar-group.reverse {
+	direction: ltr;
+}
+
+.dx-avatar-group.reverse .item {
+	margin-right: unset;
+	margin-left: -10%;
+}
+
+.dx-avatar-group.reverse .item:first-child {
+	margin-left: 0;
+}

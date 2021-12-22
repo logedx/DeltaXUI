@@ -1,0 +1,39 @@
+.dx-inpcheck {
+	width: 100%;
+	background: white;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+}
+
+.dx-inpcheck .form {
+	align-items: center;
+	background: var(--background);
+	border-radius: var(--xl);
+	color: var(--content);
+	padding: 0 var(--xs);
+	font-size: var(--sm);
+	display: flex;
+	flex: 1;
+}
+
+.dx-inpcheck .form .input {
+	flex: 1;
+	background-color: transparent;
+	height: var(--xxl);
+	line-height: var(--xxl);
+	padding: 0 var(--xs);
+}
+
+.dx-inpcheck .handle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--background);
+	margin-left: var(--sm);
+	border-radius: 50%;
+	height: var(--xxl);
+	width: var(--xxl);
+	overflow: hidden;
+}
